@@ -1,0 +1,9 @@
+.env
+env
+venv/, __pycache__/
+node_modules/, dist/
+backend/uploads/
+chroma_db/
+*.gguf, *.safetensors, *.bin
+*.mp4, *.wav
+.vscode/, Thumbs.db
