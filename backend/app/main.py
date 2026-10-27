@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 
 from app import models  # noqa: F401
 from app.database import Base, engine, get_db
-from app.routers import users,auth
+from app.routers import users,auth,files
 
 Base.metadata.create_all(bind=engine)
 
@@ -21,7 +21,7 @@ app.add_middleware(
 
 app.include_router(users.router)
 app.include_router(auth.router)
-
+app.include_router(files.router)
 
 @app.get("/")
 def home():
