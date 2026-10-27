@@ -7,3 +7,6 @@ chroma_db/
 *.gguf, *.safetensors, *.bin
 *.mp4, *.wav
 .vscode/, Thumbs.db
+# Python cache files
+__pycache__/
+*.pyc
